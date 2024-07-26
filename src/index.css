@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@layer components {
+  .link-custom {
+    @apply p-4 relative transition-all after:absolute after:bottom-0 after:left-0 after:h-1 after:bg-[#00AEED] after:w-full after:transition-all 
+  }
+}
