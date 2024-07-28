@@ -1,11 +1,25 @@
+import lattes from '../assets/lattes.svg'
+
+import { GraduationCap, Link } from 'lucide-react'
 
 const LinksImportantes = () => {
   return (
-    <div className="xl:w-[1280px] m-auto flex flex-col items-center justify-center">
-      <h1 className="text-4xl mb-10">Links Importantes</h1>
-      <a href="" className="underline text-[#00AEED] hover:no-underline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore expedita aut quae, neque eum sequi! Hic enim quam soluta esse ab quaerat possimus fugit, totam numquam temporibus cum dolorum magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sint assumenda cupiditate harum quisquam quos ipsa facilis possimus magni necessitatibus neque dolores quaerat, distinctio voluptates, inventore excepturi ipsam et eos? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi dolorem, quas hic mollitia quae totam sit dolores libero illum rerum cumque voluptatem eos aperiam impedit iste culpa atque consequuntur placeat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui corrupti fugiat, facilis quos adipisci quae dignissimos culpa tempore illum molestias enim eum optio, aperiam ab quas natus deleniti temporibus voluptate?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis amet illum numquam repellendus fuga, quae molestias similique maxime reiciendis possimus. Ex distinctio repudiandae doloremque similique accusamus autem voluptatum magnam deleniti.</a>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore expedita aut quae, neque eum sequi! Hic enim quam soluta esse ab quaerat possimus fugit, totam numquam temporibus cum dolorum magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sint assumenda cupiditate harum quisquam quos ipsa facilis possimus magni necessitatibus neque dolores quaerat, distinctio voluptates, inventore excepturi ipsam et eos? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi dolorem, quas hic mollitia quae totam sit dolores libero illum rerum cumque voluptatem eos aperiam impedit iste culpa atque consequuntur placeat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui corrupti fugiat, facilis quos adipisci quae dignissimos culpa tempore illum molestias enim eum optio, aperiam ab quas natus deleniti temporibus voluptate?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis amet illum numquam repellendus fuga, quae molestias similique maxime reiciendis possimus. Ex distinctio repudiandae doloremque similique accusamus autem voluptatum magnam deleniti.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore expedita aut quae, neque eum sequi! Hic enim quam soluta esse ab quaerat possimus fugit, totam numquam temporibus cum dolorum magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sint assumenda cupiditate harum quisquam quos ipsa facilis possimus magni necessitatibus neque dolores quaerat, distinctio voluptates, inventore excepturi ipsam et eos? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi dolorem, quas hic mollitia quae totam sit dolores libero illum rerum cumque voluptatem eos aperiam impedit iste culpa atque consequuntur placeat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui corrupti fugiat, facilis quos adipisci quae dignissimos culpa tempore illum molestias enim eum optio, aperiam ab quas natus deleniti temporibus voluptate?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis amet illum numquam repellendus fuga, quae molestias similique maxime reiciendis possimus. Ex distinctio repudiandae doloremque similique accusamus autem voluptatum magnam deleniti.</p>
+    <div className="min-h-[calc(100vh-7rem)] xl:w-[1280px] m-auto grid place-items-center">
+      <h1 className="text-3xl lg:text-5xl">Links Importantes</h1>
+      <div className="w-full grid grid-flow-row place-items-center gap-10">
+        <a href="" className="text-coral hover:underline w-full lg:w-72 px-8 py-4 rounded-full ring ring-coral flex justify-around items-center text-xl shadow-md uppercase">
+          <Link color='#FF6347' size={28} strokeWidth={2}/>
+          <span>Inscrição</span>
+        </a>
+        <a href="https://nead.ifb.edu.br/" target='_blank' className="text-coral hover:underline w-full lg:w-72 px-8 py-4 rounded-full ring ring-coral flex justify-around items-center text-xl shadow-md">
+          <GraduationCap color='#FF6347' size={28} strokeWidth={2}/>
+          <span>NEaD</span>
+        </a>
+        <a href="http://lattes.cnpq.br/1556181022870398" target='_blank' className="text-coral hover:underline w-full lg:w-72 px-8 py-4 rounded-full ring ring-coral flex justify-around items-center text-xl shadow-md uppercase">
+          <img src={lattes} alt="icon lattes" className='w-6'/>
+          <span>Lattes</span>
+        </a>
+      </div>
     </div>
   )
 }

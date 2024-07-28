@@ -8,9 +8,9 @@ const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false)
 
   return (
-    <div className="flex items-center justify-between py-2 lg:py-0 select-none shadow-lg sticky top-0 bg-light-gray z-10">
+    <header className="grid grid-flow-col place-content-between lg:place-content-around py-2 lg:py-0 select-none shadow-lg sticky top-0 bg-light-gray z-10">
       <NavLink to="/"><img src={logo} alt="Logo do site" className="w-16 mx-4 lg:w-28"/></NavLink>
-      <nav>
+      <nav className="h-full grid place-items-center">
         <section className="MOBILE-MENU flex lg:hidden">
           <div
               className="HAMBURGER-ICON space-y-2 px-4"
@@ -58,14 +58,14 @@ const Header = () => {
           </div>
         </section>
         <ul className="hidden lg:flex space-x-16 px-8">
-          <li className="hover:text-[#00AEED]"><NavLink to='/' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')}>Home</NavLink></li>
-          <li className="hover:text-[#00AEED]"><NavLink to='/edital' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')}>Edital</NavLink></li>
-          <li className="hover:text-[#00AEED]"><NavLink to='/avisos' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')}>Avisos</NavLink></li>
-          <li className="hover:text-[#00AEED]"><NavLink to='/links' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')}>Links Importantes</NavLink></li>
-          <li className="hover:text-[#00AEED]"><NavLink to='/contato' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')}>Contato</NavLink></li>
+          <li className="hover:text-secondary"><NavLink to='/' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')}>Home</NavLink></li>
+          <li className="hover:text-secondary"><NavLink to='/edital' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')}>Edital</NavLink></li>
+          <li className="hover:text-secondary"><NavLink to='/avisos' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')}>Avisos</NavLink></li>
+          <li className="hover:text-secondary"><NavLink to='/links' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')}>Links Importantes</NavLink></li>
+          <li className="hover:text-secondary"><NavLink to='/contato' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')}>Contato</NavLink></li>
         </ul>
       </nav>
-    </div>
+    </header>
   ) 
 }
 

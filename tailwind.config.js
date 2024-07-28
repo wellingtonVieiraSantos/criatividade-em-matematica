@@ -10,14 +10,15 @@ export default {
         'primary': '#0056b3',
         'secondary': '#6fa4e9',
         'terciary': '#002b4f',
-        'light-gray': ' #f2f2f2',
+        'light-gray': '#f2f2f2',
+        'midle-gray': '#e6e6e6',
         'dark-gray': '#888888',
         'coral': '#FF6347',
       },
       fontFamily:{},
       screens:{},
       backgroundImage:{
-        'teste': "url('./src/assets/logo.png')" 
+        'logo': "url('./src/assets/logo.png')" 
       },
       keyframes:{
         'link-animate':{
