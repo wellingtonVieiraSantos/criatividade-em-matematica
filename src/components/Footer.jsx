@@ -12,7 +12,7 @@ function Footer() {
       <div className="grid grid-flow-col place-content-around place-items-center">
         <img src={logo} alt="logo criatividade em matematica" className='hidden lg:block bg-light-gray rounded-full w-32 opacity-50'/>
         <ul className="grid grid-flow-col lg:grid-flow-row place-items-center gap-2 lg:gap-4">
-          <a href="" target='_blank'>
+          <a href="https://www.instagram.com/criatividadeemmatematica?utm_source=qr&igsh=MXFqZnBobGQxdDhlNA==" target='_blank'>
             <li className='flex items-center justify-around gap-2 p-2 border rounded-full lg:w-40 lg:hover:underline'><img src={instagram} alt="logo instagram" className='w-5' /><span className='hidden lg:block'>Instagram</span></li>
           </a>
           <a href="mailto:henio.oliveirsa@ifb.edu.br" target="_blank">

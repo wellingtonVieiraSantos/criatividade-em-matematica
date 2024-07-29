@@ -8,21 +8,21 @@ const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false)
 
   return (
-    <header className="grid grid-flow-col place-content-between lg:place-content-around py-2 lg:py-0 select-none shadow-lg sticky top-0 bg-light-gray z-10">
+    <header className="grid grid-flow-col place-content-between lg:place-content-around select-none shadow-lg sticky top-0 bg-light-gray z-10">
       <NavLink to="/"><img src={logo} alt="Logo do site" className="w-16 mx-4 lg:w-28"/></NavLink>
-      <nav className="h-full grid place-items-center">
-        <section className="MOBILE-MENU flex lg:hidden">
+      <nav className="grid place-items-center">
+        <section className="lg:hidden">
           <div
-              className="HAMBURGER-ICON space-y-2 px-4"
+              className="space-y-2 px-4"
               onClick={() => setIsNavOpen((prev) => !prev)}
             >
               <span className="block h-0.5 w-8 bg-black"></span>
               <span className="block h-0.5 w-8 bg-black"></span>
               <span className="block h-0.5 w-8 bg-black"></span>
           </div>
-          <div className={isNavOpen ? "absolute w-full h-screen top-0 left-0 bg-white z-10 flex flex-col justify-evenly items-center" : "hidden"}>
+          <div className={isNavOpen ? "absolute w-full h-screen top-0 left-0 bg-light-gray z-10 grid place-content-center" : "hidden"}>
             <div
-              className="absolute top-0 right-0 px-4 py-8"
+              className="absolute top-0 right-0 h-16 aspect-square grid place-items-center"
               onClick={() => setIsNavOpen(false)}
             >
               <svg
@@ -38,20 +38,20 @@ const Header = () => {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
-            <ul className="flex flex-col items-center justify-between min-h-[250px]">
-              <li className="my-8 uppercase">
+            <ul className="grid grid-flow-row place-items-center sm:grid-flow-col gap-12 sm:gap-8 min-h-[250px] uppercase">
+              <li>
                 <NavLink to='/' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')} onClick={() => setIsNavOpen(false)}>Home</NavLink>
               </li>
-              <li className=" my-8 uppercase">
+              <li>
                 <NavLink to='/edital' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')} onClick={() => setIsNavOpen(false)}>Edital</NavLink>
               </li>
-              <li className=" my-8 uppercase">
+              <li>
                 <NavLink to='/avisos' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')} onClick={() => setIsNavOpen(false)}>Avisos</NavLink>
               </li>
-              <li className=" my-8 uppercase">
+              <li>
                 <NavLink to='/links' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')} onClick={() => setIsNavOpen(false)}>Links Importantes</NavLink>
               </li>
-              <li className=" my-8 uppercase">
+              <li>
                 <NavLink to='/contato' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')} onClick={() => setIsNavOpen(false)}>Contato</NavLink>
               </li>
             </ul>

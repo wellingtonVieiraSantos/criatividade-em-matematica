@@ -18,7 +18,7 @@ export default {
       fontFamily:{},
       screens:{},
       backgroundImage:{
-        'logo': "url('./src/assets/logo.png')" 
+        'logo': "url('./src/assets/logo.png')" ,
       },
       keyframes:{
         'link-animate':{
