@@ -15,7 +15,7 @@ function Footer() {
           <a href="https://www.instagram.com/criatividadeemmatematica?utm_source=qr&igsh=MXFqZnBobGQxdDhlNA==" target='_blank'>
             <li className='flex items-center justify-around gap-2 p-2 border rounded-full lg:w-40 lg:hover:underline'><img src={instagram} alt="logo instagram" className='w-5' /><span className='hidden lg:block'>Instagram</span></li>
           </a>
-          <a href="mailto:henio.oliveirsa@ifb.edu.br" target="_blank">
+          <a href="mailto:henio.oliveira@ifb.edu.br" target="_blank">
             <li className='flex items-center justify-around gap-2 p-2 border rounded-full lg:w-40 lg:hover:underline'><Mail size={20} color='#f2f2f2'/><span className='hidden lg:block'>Email</span></li>
           </a>
         </ul>
