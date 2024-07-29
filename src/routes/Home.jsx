@@ -7,8 +7,8 @@ const Home = () => {
     <div>
       <div className="h-[calc(100vh-7rem)] grid sm:grid-flow-col sm:grid-cols-[1fr_1fr]">
         <div className=" bg-secondary grid place-items-center place-content-evenly text-terciary p-4">
-          <h1 className="hidden lg:block text-6xl">Criatividade em Matemática</h1>
-          <h2 className="text-center text-xl lg:text-4xl">1ª Edição da Formação em Criatividade em Matemática através de Problemas Abertos</h2>
+          <h1 className="hidden lg:block lg:text-5xl xl:text-6xl text-center">Criatividade em Matemática</h1>
+          <h2 className="text-center text-2xl lg:text-3xl xl:text-4xl">1ª Edição da Formação em Criatividade em Matemática através de Problemas Abertos</h2>
         </div>
         <div className="flex flex-col justify-center lg:justify-end items-center lg:gap-12 lg:h-full xl:bg-logo xl:bg-no-repeat xl:bg-top">
           <div className="h-1/2 flex flex-col justify-center gap-8">
