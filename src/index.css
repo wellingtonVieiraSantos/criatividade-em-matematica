@@ -7,8 +7,33 @@
   scroll-behavior: smooth;
 }
 
+h1,h2,h3 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+a{
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: large;
+}
+
 @layer components {
   .link-custom {
     @apply p-4 relative transition-all after:absolute after:bottom-0 after:left-0 after:h-1 after:bg-secondary after:w-full after:transition-all 
   }
+}
+
+@font-face {
+  font-family: 'Calibri Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/fonts/calibril.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Trebuchet MS';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/fonts/trebuc.woff') format('woff');
 }

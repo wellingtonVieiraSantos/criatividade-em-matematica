@@ -10,7 +10,7 @@ const Edital = () => {
         <li><strong>Períodos de realização do Curso</strong>
           <ol className="list-disc list-inside">
             <li>1ª etapa - De 16 de setembro a 4 de novembro de 2024 [2 meses].</li>
-            <li>2ª etapa - De 11 de novembro de 2024 a 11 de maio de 2024 [6 meses].</li>
+            <li>2ª etapa - De 11 de novembro de 2024 a 11 de maio de 2025 [6 meses].</li>
           </ol>
         </li>
         <li><strong>Modalidade do Curso:</strong> A distância e gratuito via plataforma <a href="https://nead.ifb.edu.br/" target="_blank" className="text-coral font-bold hover:underline">nead.ifb.edu.br</a>.</li>

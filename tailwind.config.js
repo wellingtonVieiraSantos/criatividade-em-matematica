@@ -15,19 +15,32 @@ export default {
         'dark-gray': '#888888',
         'coral': '#FF6347',
       },
-      fontFamily:{},
+      fontFamily:{
+        'calibri': ['"Calibri Light"', 'sans-serif'],
+        'trebuchet': ["Trebuchet MS", 'sans-serif'],
+      },
       screens:{},
       backgroundImage:{
-        'logo': "url('./src/assets/logo.png')" ,
+        'logo': "url('./src/assets/logo.webp')" ,
       },
       keyframes:{
-        'link-animate':{
-          '0%':{'width': 0},
-          '100%':{'width': '100%'}
+        'link-animate': {
+          '0%':{width: 0},
+          '100%':{width: '100%'}
+        },
+        'menu-in': {
+          'from': { transform: 'translateX(-100%)', opacity: 0 },
+          'to': { transform: 'translateX(0)', opacity: 1 }
+        },
+        'menu-out': {
+          'from': { transform: 'translateX(0)', opacity: 1 },
+          'to': { transform: 'translateX(-100%)', opacity: 0 }
         }
       },
       animation:{
-        'link-animate': 'link-animate .5s ease-in-out'
+        'link-animate': 'link-animate .5s ease-in-out',
+        'menu-in': 'menu-in .7s ease-in-out',
+        'menu-out': 'menu-out .7s ease-in-out'
       }
     },
   },
