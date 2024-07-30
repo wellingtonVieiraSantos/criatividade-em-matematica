@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { Link as IconLink, Newspaper } from 'lucide-react'
 
+import logo from '../assets/logo.webp'
 import unioeste from '../assets/unioeste.webp'
 import ifb from '../assets/ifb.webp'
 import capes from '../assets/capes.webp'
@@ -17,8 +18,10 @@ const Home = () => {
           <h1 className="hidden lg:block lg:text-5xl xl:text-6xl text-center font-trebuchet">Criatividade em Matemática</h1>
           <h2 className="text-center text-2xl lg:text-3xl xl:text-4xl font-trebuchet">1ª Edição da Formação em Criatividade em Matemática através de Problemas Abertos</h2>
         </div>
-        <div className="flex flex-col justify-center lg:justify-end items-center lg:gap-12 lg:h-full xl:bg-logo xl:bg-no-repeat xl:bg-top">
-          <div className="h-1/2"></div>
+        <div className="flex flex-col justify-center items-center">
+          <div className="hidden lg:grid lg:w-full lg:place-content-center">
+            <img src={logo} alt="criatividade em matematica logo" className="h-full aspect-square opacity-80"/>
+          </div>
           <div className="h-1/2 flex flex-col justify-center gap-8">
             <Link to="/edital" className="grid grid-flow-col place-items-center gap-4 lg:w-72 text-secondary font-bold hover:underline py-4 px-8 rounded-full ring ring-secondary uppercase">
               <Newspaper color='#6fa4e9' size={28}/>

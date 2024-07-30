@@ -62,18 +62,18 @@ const Header = () => {
                   <NavLink to='/links' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')} onClick={handleCloseMenu}>Links Importantes</NavLink>
                 </li>
                 <li>
-                  <NavLink to='/contato' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')} onClick={handleCloseMenu}>Contato</NavLink>
+                  <NavLink to='/contatos' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')} onClick={handleCloseMenu}>Contatos</NavLink>
                 </li>
               </ul>
             </div>
           )}
         </section>
-        <ul className="hidden lg:flex space-x-16 px-8">
+        <ul className="hidden lg:flex space-x-16 px-8 uppercase">
           <li className="hover:text-secondary"><NavLink to='/' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')}>Home</NavLink></li>
           <li className="hover:text-secondary"><NavLink to='/edital' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')}>Edital</NavLink></li>
           <li className="hover:text-secondary"><NavLink to='/avisos' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')}>Avisos</NavLink></li>
           <li className="hover:text-secondary"><NavLink to='/links' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')}>Links Importantes</NavLink></li>
-          <li className="hover:text-secondary"><NavLink to='/contato' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')}>Contato</NavLink></li>
+          <li className="hover:text-secondary"><NavLink to='/contatos' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')}>Contatos</NavLink></li>
         </ul>
       </nav>
     </header>
