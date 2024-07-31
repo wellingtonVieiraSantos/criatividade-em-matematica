@@ -12,8 +12,8 @@ import gepeem from '../assets/gepeem.webp'
 
 const Home = () => {
   return (
-    <div>
-      <div className="h-[calc(100vh-7rem)] grid sm:grid-cols-[1fr_1fr]">
+    <>
+      <section className="min-h-[calc(100vh-7rem)] grid sm:grid-cols-[1fr_1fr]">
         <div className=" bg-secondary grid place-items-center place-content-evenly text-terciary p-4">
           <h1 className="hidden lg:block lg:text-5xl xl:text-6xl text-center font-trebuchet">Criatividade em Matemática</h1>
           <h2 className="text-center text-2xl lg:text-3xl xl:text-4xl font-trebuchet">1ª Edição da Formação em Criatividade em Matemática através de Problemas Abertos</h2>
@@ -22,7 +22,7 @@ const Home = () => {
           <div className="hidden lg:grid lg:w-full lg:place-content-center">
             <img src={logo} alt="criatividade em matematica logo" className="h-full aspect-square opacity-80"/>
           </div>
-          <div className="h-1/2 flex flex-col justify-center gap-8">
+          <div className="flex flex-col justify-center gap-8 pb-4">
             <Link to="/edital" className="grid grid-flow-col place-items-center gap-4 lg:w-72 text-secondary font-bold hover:underline py-4 px-8 rounded-full ring ring-secondary uppercase">
               <Newspaper color='#6fa4e9' size={28}/>
               Veja o edital
@@ -33,8 +33,8 @@ const Home = () => {
             </a>
           </div>
         </div>
-      </div> 
-      <div className="min-h-[calc(100vh-7rem)] grid place-items-center bg-midle-gray">
+      </section> 
+      <section className="min-h-[calc(100vh-7rem)] grid place-items-center bg-midle-gray">
         <div className="w-full min-h-5/6 xl:w-[1280px] m-auto grid place-items-center bg-light-gray shadow-md">
           <h2 className="text-5xl my-10">Realização</h2>
           <div className="w-full grid gap-8 sm:grid-cols-2 lg:grid-cols-3 place-items-center p-10">
@@ -46,8 +46,8 @@ const Home = () => {
             <img src={gepeem} alt="gepeem logo" className="w-[150px] hover:scale-125 transition-all" />
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   )
 }
 

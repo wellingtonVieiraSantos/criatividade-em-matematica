@@ -2,7 +2,7 @@ import { Mail } from 'lucide-react'
 
 const Contato = () => {
   return (
-    <div className="min-h-[calc(100vh-7rem)] xl:w-[1280px] m-auto grid place-items-center gap-2 my-2">
+    <section className="min-h-[calc(100vh-7rem)] xl:w-[1280px] m-auto grid place-items-center gap-2 my-2">
       <h1 className="text-3xl lg:text-5xl mt-5">Contatos</h1>
       <div className="w-full rounded-lg p-8 lg:w-1/2 grid gap-4 shadow-lg">
         <h2 className='text-xl font-bold'>Instagram</h2>
@@ -24,7 +24,7 @@ const Contato = () => {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
