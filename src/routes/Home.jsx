@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom"
 import { Link as IconLink, Newspaper } from 'lucide-react'
 
-import logo from '../assets/logo.webp'
-import unioeste from '../assets/unioeste.webp'
-import ifb from '../assets/ifb.webp'
-import capes from '../assets/capes.webp'
-import gtie from '../assets/gtie.webp'
-import ppgecem from '../assets/ppgecem.webp'
-import gepeem from '../assets/gepeem.webp'
+import logo from '../assets/img/logo.webp'
+import unioeste from '../assets/img/unioeste.webp'
+import ifb from '../assets/img/ifb.webp'
+import capes from '../assets/img/capes.webp'
+import gtie from '../assets/img/gtie.webp'
+import ppgecem from '../assets/img/ppgecem.webp'
+import gepeem from '../assets/img/gepeem.webp'
 
 
 const Home = () => {

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Mail } from 'lucide-react'
-import instagram from '../assets/instagram.svg'
-import logo from '../assets/logo.webp'
+import instagram from '../assets/img/instagram.svg'
+import logo from '../assets/img/logo.webp'
 
 function Footer() {
 

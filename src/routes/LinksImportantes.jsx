@@ -1,4 +1,4 @@
-import lattes from '../assets/lattes.svg'
+import lattes from '../assets/img/lattes.svg'
 
 import { GraduationCap, Link } from 'lucide-react'
 
