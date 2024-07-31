@@ -35,15 +35,15 @@ const Home = () => {
         </div>
       </div> 
       <div className="min-h-[calc(100vh-7rem)] grid place-items-center bg-midle-gray">
-        <div className="w-full xl:w-[1280px] m-auto grid place-items-center bg-light-gray shadow-md">
+        <div className="w-full min-h-5/6 xl:w-[1280px] m-auto grid place-items-center bg-light-gray shadow-md">
           <h2 className="text-5xl my-10">Realização</h2>
-          <div className="w-full flex flex-wrap justify-center items-center gap-20 p-10">
-            <img src={unioeste} alt="unioeste logo" className="w-[350px] hover:scale-105 transition-all" />
-            <img src={ifb} alt="ifb logo" className="w-[250px] hover:scale-105 transition-all" />
-            <img src={capes} alt="capes logo" className="w-[250px] hover:scale-105 transition-all" />
-            <img src={ppgecem} alt="ppgecem logo" className="w-[250px] hover:scale-105 transition-all" />
-            <img src={gtie} alt="gtie logo" className="w-[300px] hover:scale-105 transition-all" />
-            <img src={gepeem} alt="gepeem logo" className="w-[250px] hover:scale-105 transition-all" />
+          <div className="w-full grid gap-8 sm:grid-cols-2 lg:grid-cols-3 place-items-center p-10">
+            <img src={unioeste} alt="unioeste logo" className="w-[150px] hover:scale-125 transition-all" />
+            <img src={ifb} alt="ifb logo" className="w-[150px] hover:scale-125 transition-all" />
+            <img src={capes} alt="capes logo" className="w-[150px] hover:scale-125 transition-all" />
+            <img src={ppgecem} alt="ppgecem logo" className="w-[150px] hover:scale-125 transition-all" />
+            <img src={gtie} alt="gtie logo" className="w-[150px] hover:scale-125 transition-all" />
+            <img src={gepeem} alt="gepeem logo" className="w-[150px] hover:scale-125 transition-all" />
           </div>
         </div>
       </div>
