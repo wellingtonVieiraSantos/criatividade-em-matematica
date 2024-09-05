@@ -23,5 +23,5 @@ export const candidatos = [
   {nome: 'Juliane Sperandio', cpf: '049.xxx.xxx-46'},
   {nome: 'Andressa Schipanski', cpf: '094.xxx.xxx-40'},
   {nome: 'Fabíola Walter', cpf: '052.xxx.xxx-63'},
-  {nome: 'Cristiane dos Santos', cpf: '052.xxx.xxx-63'},
+  {nome: 'Cristiane dos Santos', cpf: '079.xxx.xxx-89'},
 ]

@@ -9,7 +9,6 @@ import gtie from '../assets/img/gtie.webp'
 import ppgecem from '../assets/img/ppgecem.webp'
 import gepeem from '../assets/img/gepeem.webp'
 
-
 const Home = () => {
   return (
     <>
