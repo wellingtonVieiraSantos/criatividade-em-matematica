@@ -13,8 +13,6 @@ dist-ssr
 *.local
 
 
-src/util/*
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
