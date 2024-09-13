@@ -17,7 +17,7 @@ const LinksImportantes = () => {
         </a>
         <a href="http://lattes.cnpq.br/1556181022870398" target='_blank' className="text-coral font-bold hover:underline w-full lg:w-72 py-4 px-8 sm:px-0 rounded-full ring ring-coral grid grid-flow-col place-content-evenly text-lg shadow-lg uppercase">
           <img src={lattes} alt="icon lattes" className='w-6'/>
-          <span>Lattes</span>
+          <span translate='no'>Lattes</span>
         </a>
       </div>
     </section>

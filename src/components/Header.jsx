@@ -49,7 +49,7 @@ const Header = () => {
                 </svg>
               </div>
               <ul className="grid grid-flow-row place-items-center sm:grid-flow-col gap-12 sm:gap-8 min-h-[250px] uppercase">
-                <li>
+                <li translate='no'>
                   <NavLink to='/' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')} onClick={handleCloseMenu}>Home</NavLink>
                 </li>
                 <li>
@@ -69,7 +69,7 @@ const Header = () => {
           )}
         </section>
         <ul className="hidden lg:flex space-x-16 px-8 uppercase">
-          <li className="hover:text-secondary"><NavLink to='/' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')}>Home</NavLink></li>
+          <li className="hover:text-secondary" translate='no'><NavLink to='/' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')}>Home</NavLink></li>
           <li className="hover:text-secondary"><NavLink to='/edital' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')}>Edital</NavLink></li>
           <li className="hover:text-secondary"><NavLink to='/avisos' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')}>Avisos</NavLink></li>
           <li className="hover:text-secondary"><NavLink to='/links' className={({isActive}) => ( isActive ? 'link-custom after:animate-link-animate' : '')}>Links Importantes</NavLink></li>

@@ -20,7 +20,7 @@ const Contato = () => {
         <div className='w-full grid place-items-center sm:place-items-end'>
           <a href="mailto:henio.oliveira@ifb.edu.br" target='_blank' className='w-full sm:w-1/2 ring ring-secondary hover:underline uppercase font-bold grid grid-flow-col place-items-center gap-4 text-secondary px-8 py-4 rounded-full'>
             <Mail color='#6fa4e9' size={28}/>
-            <span>E-mail</span>
+            <span translate='no'>E-mail</span>
           </a>
         </div>
       </div>
