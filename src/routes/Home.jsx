@@ -15,7 +15,7 @@ const Home = () => {
       <section className="min-h-[calc(100vh-7rem)] grid sm:grid-cols-[1fr_1fr]">
         <div className=" bg-secondary grid place-items-center place-content-evenly text-terciary p-4">
           <h1 className="hidden lg:block lg:text-5xl xl:text-6xl text-center font-trebuchet">Criatividade em Matemática</h1>
-          <h2 className="text-center text-2xl lg:text-3xl xl:text-4xl font-trebuchet">1ª Edição da Formação em Criatividade em Matemática através de Problemas Abertos</h2>
+          <h2 className="text-center text-2xl lg:text-3xl xl:text-4xl font-trebuchet">Formação em Criatividade em Matemática através de Problemas Abertos</h2>
         </div>
         <div className="flex flex-col justify-center items-center">
           <div className="hidden lg:grid lg:w-full lg:place-content-center">
