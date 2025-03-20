@@ -103,7 +103,7 @@ const Edital = () => {
         </p>
         <h2 className='my-4'>Processo de solicitação de inscrição </h2>
         <p>
-          Os interessados deverão preencher um formulário online disponível em
+          Os interessados deverão preencher um formulário online disponível em{' '}
           <strong>
             24 de março de 2025 (segunda-feira), às 13h (horário de Brasília)
           </strong>
@@ -188,7 +188,7 @@ const Edital = () => {
         </ul>
         <p>
           <em>
-            Reflexões teórico-práticas 2 – A criatividade através dos problemas
+            Reflexões Teórico-Práticas 2 – A criatividade através dos problemas
             abertos
           </em>
         </p>
@@ -198,26 +198,22 @@ const Edital = () => {
           <li className='indent-4'>Escolas criativas. </li>
         </ul>
         <p>
-          <em>Reflexões teórico-práticas 3 – A Criatividade em Matemática</em>
+          <em>Reflexões Teórico-Práticas 3 – A Criatividade em Matemática</em>
         </p>
         <ul className='list-disc list-inside mb-4'>
-          <li className='indent-4'>
-            Conceitos de Criatividade em Matemática.{' '}
-          </li>
+          <li className='indent-4'>Conceitos de Criatividade em Matemática.</li>
           <li className='indent-4'>A fórmula de Ofili. </li>
+          <li className='indent-4'>Pesquisas em Criatividade em Matemática.</li>
           <li className='indent-4'>
-            Pesquisas em Criatividade em Matemática.{' '}
-          </li>
-          <li className='indent-4'>
-            O Modelo dos Quatro C de Kaufman e Beghetto.{' '}
+            O Modelo dos Quatro C de Kaufman e Beghetto.
           </li>
         </ul>
         <p>
-          <em>Reflexões teórico-práticas 4 – A Criatividade Docente</em>
+          <em>Reflexões Teórico-Práticas 4 – A Criatividade Docente</em>
         </p>
         <ul className='list-disc list-inside mb-4'>
           <li className='indent-4'>
-            O ensinar criativamente e o ensinar para a criatividade.{' '}
+            O ensinar criativamente e o ensinar para a criatividade.
           </li>
           <li className='indent-4'>Avaliação e Criatividade em Matemática. </li>
           <li className='indent-4'>A Criatividade Docente. </li>
