@@ -20,7 +20,212 @@ const Edital = () => {
             PROBLEMAS ABERTOS - 3ª Edição
           </h1>
         </header>
+        <p>
+          Este edital destina-se a regular o processo de seleção dos cursistas
+          que comporão a 3ª turma da formação em Criatividade em Matemática
+          através de Problemas Abertos, realizado na modalidade a distância e
+          promovido pela Universidade Estadual do Oeste do Paraná (Unioeste),
+          Campus Cascavel, e pelo Instituto Federal de Brasília (IFB), Campus
+          Planaltina. O curso faz parte do projeto de pesquisa (Sucupira):
+          Formação e/em Práticas com Pensamento Computacional e Tecnologias
+          Digitais para Professores que Ensinam Matemática.
+        </p>
+        <h2 className='my-4'>Público-alvo</h2>
+        <p>
+          Professores e professoras que ensinam Matemática na Educação Básica
+          <em> (Ensino Fundamental – Anos Finais)</em> e estudantes de
+          licenciatura em Matemática.
+        </p>
+        <h2 className='my-4'>
+          Período de realização do curso (14/04/25 – 26/05/25)
+        </h2>
+        <p>
+          A formação terá carga horária total de 56 horas, distribuídas da
+          seguinte forma: <br />
+          <strong>
+            Encontros (24 horas síncronas + 32 horas assíncronas = 56 horas)
+          </strong>
+        </p>
+        <h2 className='my-4'>
+          Datas dos encontros síncronos (Segundas e Quartas-feiras, 14h-16h):
+        </h2>
+        <div className='grid grid-flow-col grid-rows-6 sm:grid-rows-4 place-items-center'>
+          <span>01 - 14/04</span>
+          <span>02 - 16/04</span>
+          <span>03 - 23/04</span>
+          <span>04 - 28/04</span>
+          <span>05 - 30/04</span>
+          <span>06 - 05/05</span>
+          <span>07 - 07/05</span>
+          <span>08 - 12/05</span>
+          <span>09 - 14/05</span>
+          <span>10 - 19/05</span>
+          <span>11 - 21/05</span>
+          <span>12 - 26/05</span>
+        </div>
+        <h2 className='my-4'>Modalidade do curso </h2>
+        <p>
+          A distância e gratuito via plataforma{' '}
+          <a
+            href='https://nead.ifb.edu.br/'
+            target='_blank'
+            className='text-coral font-bold hover:underline'
+          >
+            nead.ifb.edu.br
+          </a>
+          .
+        </p>
+        <h2 className='my-4'>Carga horária </h2>
+        <p>
+          A formação terá um total de <strong>56 horas</strong>, com{' '}
+          <strong>24 horas de encontros síncronos</strong> e 32{' '}
+          <strong>horas de atividades assíncronas</strong>.{' '}
+        </p>
+        <h2 className='my-4'>Vagas</h2>
+        <p>
+          Serão disponibilizadas <strong>20 vagas</strong>, distribuídas da
+          seguinte forma:
+        </p>
+        <ul className='list-disc list-inside '>
+          <li className='indent-4'>
+            <strong>10 vagas</strong> para professores/as da Educação Básica que
+            ensinam Matemática
+          </li>
+          <li className='indent-4'>
+            <strong>10 vagas</strong> para estudantes de licenciatura em
+            Matemática
+          </li>
+        </ul>
+        <p>
+          Caso o/a candidato/a tenha participado da chamada anterior, não poderá
+          se inscrever nesta terceira chamada, pois o grupo 2 ainda está em
+          formação.
+        </p>
+        <h2 className='my-4'>Processo de solicitação de inscrição </h2>
+        <p>
+          Os interessados deverão preencher um formulário online disponível em
+          <strong>
+            24 de março de 2025 (segunda-feira), às 13h (horário de Brasília)
+          </strong>
+          . O formulário de{' '}
+          <a
+            href='https://forms.gle/eDY6gqEszVgrkd218'
+            target='_blank'
+            className='text-coral font-bold hover:underline'
+          >
+            Inscrição
+          </a>{' '}
+          deverá conter as seguintes informações:
+        </p>
+        <ul className='list-disc list-inside '>
+          <li className='indent-4'>Nome completo</li>
+          <li className='indent-4'>CPF</li>
+          <li className='indent-4'>Data de nascimento</li>
+          <li className='indent-4'>Região e estado</li>
+          <li className='indent-4'>E-mail</li>
+          <li className='indent-4'>
+            Termo de Consentimento Livre e Esclarecido (TCLE)
+          </li>
+        </ul>
+        <p>
+          Os candidatos receberão um e-mail com a confirmação da solicitação de
+          inscrição no prazo máximo de <strong>24 horas</strong>. O processo de
+          inscrição poderá ser encerrado antecipadamente caso o número de
+          inscritos atinja <strong>40 solicitações</strong>.
+        </p>
+        <h2 className='my-4'>Critérios de preenchimento das vagas</h2>
+        <p>
+          As vagas serão preenchidas obedecendo à{' '}
+          <strong>ordem cronológica</strong> de inscrição e à distribuição por
+          categoria (professores e licenciandos). Caso haja mais solicitações do
+          que vagas disponíveis, será formada uma{' '}
+          <strong>lista de espera</strong>.
+        </p>
+        <h2 className='my-4'>Efetivação da inscrição</h2>
+        <p>
+          A lista de candidatos inscritos será divulgada até{' '}
+          <strong>
+            07 de abril de 2025 (segunda-feira), às 13h (horário de Brasília)
+          </strong>
+          . Os candidatos devem realizar o primeiro acesso à plataforma até{' '}
+          <strong>11 de setembro de 2025 (sexta-feira), às 23h59</strong>, para
+          confirmar sua inscrição. Caso o candidato não acesse a plataforma até
+          essa data, sua vaga será destinada a um candidato da{' '}
+          <strong>lista de espera</strong>.
+        </p>
+        <p>
+          Para dúvidas, entre em contato pelo e-mail{' '}
+          <a
+            href='mailto:henio.oliveira@ifb.edu.br'
+            target='_blank'
+            className='text-coral font-bold hover:underline'
+          >
+            henio.oliveira@ifb.edu.br
+          </a>
+          .
+        </p>
+        <h2 className='my-4'>Conteúdo Programático</h2>
+        <p>
+          <em>
+            Reflexões Teórico-Práticas 1 – A criatividade em um primeiro olhar
+          </em>
+        </p>
+        <ul className='list-disc list-inside mb-4'>
+          <li className='indent-4'>
+            Introduzindo a importância e o impacto da criatividade.
+          </li>
+          <li className='indent-4'>Wallas e o Pensamento Criativo. </li>
+          <li className='indent-4'>
+            Guilford e os Pensamentos Convergente e Divergente.
+          </li>
+          <li className='indent-4'>
+            Fluência, Flexibilidade, Originalidade e Elaboração.
+          </li>
+          <li className='indent-4'>
+            Torrance, o pai da Pesquisa em Criatividade.
+          </li>
+          <li className='indent-4'>Novaes e a Psicologia da criatividade. </li>
+        </ul>
+        <p>
+          <em>
+            Reflexões teórico-práticas 2 – A criatividade através dos problemas
+            abertos
+          </em>
+        </p>
+        <ul className='list-disc list-inside mb-4'>
+          <li className='indent-4'>O “somatório de Gauss”. </li>
+          <li className='indent-4'>Alencar, Criatividade e Ensino. </li>
+          <li className='indent-4'>Escolas criativas. </li>
+        </ul>
+        <p>
+          <em>Reflexões teórico-práticas 3 – A Criatividade em Matemática</em>
+        </p>
+        <ul className='list-disc list-inside mb-4'>
+          <li className='indent-4'>
+            Conceitos de Criatividade em Matemática.{' '}
+          </li>
+          <li className='indent-4'>A fórmula de Ofili. </li>
+          <li className='indent-4'>
+            Pesquisas em Criatividade em Matemática.{' '}
+          </li>
+          <li className='indent-4'>
+            O Modelo dos Quatro C de Kaufman e Beghetto.{' '}
+          </li>
+        </ul>
+        <p>
+          <em>Reflexões teórico-práticas 4 – A Criatividade Docente</em>
+        </p>
+        <ul className='list-disc list-inside mb-4'>
+          <li className='indent-4'>
+            O ensinar criativamente e o ensinar para a criatividade.{' '}
+          </li>
+          <li className='indent-4'>Avaliação e Criatividade em Matemática. </li>
+          <li className='indent-4'>A Criatividade Docente. </li>
+          <li className='indent-4'>Reflexões teórico-práticas autônomas </li>
+          <li className='indent-4'>Práticas em criatividade em matemática. </li>
+        </ul>
       </section>
+      {/* -------------- editais antigos ------------- */}
       <section className='my-10'>
         <header>
           <img

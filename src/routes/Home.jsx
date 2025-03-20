@@ -37,11 +37,11 @@ const Home = () => {
               <Newspaper color='#6fa4e9' size={28} />
               Veja o edital
             </Link>
-            <button disabled>
+            <button>
               <a
-                href='https://forms.gle/E5yGCoZ9V1wxzrSu6'
+                href='https://forms.gle/eDY6gqEszVgrkd218'
                 target='_blank'
-                className='hidden grid-flow-col gap-4 lg:w-72 text-coral font-bold hover:underline py-4 px-8 rounded-full ring ring-coral uppercase'
+                className='grid grid-flow-col gap-4 lg:w-72 text-coral font-bold hover:underline py-4 px-8 rounded-full ring ring-coral uppercase'
                 aria-disabled
               >
                 <IconLink color='#FF6347' size={28} />

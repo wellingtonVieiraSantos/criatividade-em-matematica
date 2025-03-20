@@ -8,9 +8,9 @@ const LinksImportantes = () => {
       <h1 className='text-3xl lg:text-5xl mt-5'>Links Importantes</h1>
       <div className='grid grid-flow-row place-items-center gap-10 my-5'>
         <a
-          href='https://forms.gle/E5yGCoZ9V1wxzrSu6'
+          href='https://forms.gle/eDY6gqEszVgrkd218'
           target='_blank'
-          className='hidden text-coral font-bold hover:underline w-full sm:w-72 py-4 px-8 sm:px-0 rounded-full ring ring-coral grid-flow-col place-content-evenly gap-2 sm:gap-0 text-lg shadow-lg uppercase'
+          className='text-coral font-bold hover:underline w-full sm:w-72 py-4 px-8 sm:px-0 rounded-full ring ring-coral grid grid-flow-col place-content-evenly gap-2 sm:gap-0 text-lg shadow-lg uppercase'
         >
           <Link color='#FF6347' size={28} strokeWidth={2} />
           <span>Inscrição</span>
