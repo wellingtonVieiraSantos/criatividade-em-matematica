@@ -4,8 +4,29 @@ import { naoClassificadosAr } from '../util/naoClassificadosAR'
 import { candidatos2025 } from '../util/candidatos2025'
 import argentina from '../assets/img/argentina.png'
 import brasil from '../assets/img/brasil.png'
+import { useState } from 'react'
+import { Search } from 'lucide-react'
 
 const Avisos = () => {
+  const initialState = []
+  const [candidato, setCandidato] = useState(initialState)
+  const [showTable, setShowTable] = useState(false)
+
+  const handleshowTable = () => setShowTable(prev => !prev)
+
+  const handleSearch = (e, listaCandidatos) => {
+    if (e.target.value === '') {
+      setCandidato(initialState)
+      return
+    }
+
+    const candidatoFilter = listaCandidatos.filter(candidato =>
+      candidato.nome.toLowerCase().startsWith(e.target.value.toLowerCase())
+    )
+    setCandidato(candidatoFilter || initialState)
+    console.log(candidatoFilter)
+  }
+
   return (
     <section className='min-h-[calc(100vh-7rem)] xl:w-[1280px] grid place-items-center gap-8 m-auto my-10 text-justify leading-loose p-3 '>
       <h1 className='text-3xl lg:text-5xl mt-5'>Avisos</h1>
@@ -50,29 +71,81 @@ const Avisos = () => {
             para confirmar sua matrícula.
           </p>
           <h3 className='text-center my-8'>Clasificados</h3>
-          <table className='table-auto my-4 divide-y m-auto sm:w-1/2'>
-            <thead className='text-center'>
-              <tr>
-                <th scope='col' className='py-2'>
-                  Nome
-                </th>
-                <th scope='col'>CPF</th>
-              </tr>
-            </thead>
-            <tbody>
-              {candidatos2025.map(candidatos => (
-                <tr
-                  className='odd:bg-slate-50 even:bg-blue-100'
-                  key={candidatos.nome}
-                >
-                  <td className='py-2'>{candidatos.nome}</td>
-                  <td className='text-right text-sm sm:text-base'>
-                    {candidatos.cpf}
-                  </td>
+
+          <div className='flex flex-col items-center'>
+            <div className='relative flex group'>
+              <input
+                type='search'
+                onChange={e => handleSearch(e, candidatos2025)}
+                className='w-full h-full max-w-[300px] bg-light-gray border border-dark-gray py-2 px-4 outline-none rounded-l'
+                placeholder='Procure seu nome aqui'
+              />
+              <Search className='absolute w-8 right-0 bottom-0 h-full group-focus-within:translate-x-full transition duration-300 border border-dark-gray rounded-r' />
+            </div>
+            <table className='table-auto my-4 divide-y m-auto sm:w-1/2 w-full'>
+              <thead className='text-center'>
+                <tr>
+                  <th scope='col' className='py-2'>
+                    Nome
+                  </th>
+                  <th scope='col'>CPF</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {candidato.length > 0 ? (
+                  candidato.map((can, index) => (
+                    <tr
+                      className='odd:bg-slate-50 even:bg-blue-100'
+                      key={index}
+                    >
+                      <td className='p-2'>{can.nome}</td>
+                      <td className='text-right text-sm sm:text-base p-2'>
+                        {can.cpf}
+                      </td>
+                    </tr>
+                  ))
+                ) : (
+                  <tr className='odd:bg-slate-50 even:bg-blue-100 '>
+                    <td className='py-2 text-center' colSpan={2}>
+                      Não há resultados
+                    </td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+          <p>Ou se preferir, veja a lista completa abaixo.</p>
+          <button
+            className='bg-primary text-light-gray py-2 px-4 rounded w-full'
+            onClick={() => handleshowTable()}
+          >
+            {showTable ? 'Esconde lista' : 'Ver lista completa'}
+          </button>
+          {showTable && (
+            <table className='table-auto my-4 divide-y m-auto sm:w-1/2 w-full'>
+              <thead className='text-center'>
+                <tr>
+                  <th scope='col' className='py-2'>
+                    Nome
+                  </th>
+                  <th scope='col'>CPF</th>
+                </tr>
+              </thead>
+              <tbody>
+                {candidatos2025.map(candidatos => (
+                  <tr
+                    className='odd:bg-slate-50 even:bg-blue-100'
+                    key={candidatos.nome}
+                  >
+                    <td className='p-2'>{candidatos.nome}</td>
+                    <td className='text-right text-sm sm:text-base p-2'>
+                      {candidatos.cpf}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
         </div>
         <div>
           <header>
