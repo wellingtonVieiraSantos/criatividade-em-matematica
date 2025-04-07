@@ -1,6 +1,7 @@
 import { candidatos } from '../util/candidatos'
 import { classificadosAr } from '../util/classificadosAR'
 import { naoClassificadosAr } from '../util/naoClassificadosAR'
+import { candidatos2025 } from '../util/candidatos2025'
 import argentina from '../assets/img/argentina.png'
 import brasil from '../assets/img/brasil.png'
 
@@ -10,7 +11,69 @@ const Avisos = () => {
       <h1 className='text-3xl lg:text-5xl mt-5'>Avisos</h1>
 
       {/* <p className="text-dark-gray">Em breve, novidades!</p> */}
+
       <div className='flex flex-col gap-8 divide-y-2 divide-terciary divide-dashed'>
+        <div>
+          <header>
+            <img
+              src={brasil}
+              alt='bandeira do brasil'
+              width={96}
+              height={96}
+              className='h-24'
+            />
+            <h2 className='text-terciary text-xl font-bold my-4 place-self-start'>
+              1ª chamada: Turma A (3ª Edição - Segundas e Quartas-feiras,
+              14h-16h)
+            </h2>
+          </header>
+          <p>
+            Os selecionados e selecionadas abaixo devem acessar a plataforma{' '}
+            <a
+              href='https://nead.ifb.edu.br/'
+              target='_blank'
+              className='text-coral font-bold hover:underline hover:underline-offset-4'
+            >
+              nead.ifb.edu.br
+            </a>
+            , criar uma conta e informar ao professor Hênio{' '}
+            <a
+              href='mailto:henio.oliveira@ifb.edu.br'
+              target='_blank'
+              className='text-coral font-bold hover:underline hover:underline-offset-4'
+            >
+              henio.oliveira@ifb.edu.br
+            </a>{' '}
+            para que sejam vinculados e vinculadas ao ambiente de formação. Os
+            candidatos devem realizar o primeiro acesso à plataforma até{' '}
+            <strong>11 de setembro de 2025 (sexta-feira), às 23h59</strong>,
+            para confirmar sua matrícula.
+          </p>
+          <h3 className='text-center my-8'>Clasificados</h3>
+          <table className='table-auto my-4 divide-y m-auto sm:w-1/2'>
+            <thead className='text-center'>
+              <tr>
+                <th scope='col' className='py-2'>
+                  Nome
+                </th>
+                <th scope='col'>CPF</th>
+              </tr>
+            </thead>
+            <tbody>
+              {candidatos2025.map(candidatos => (
+                <tr
+                  className='odd:bg-slate-50 even:bg-blue-100'
+                  key={candidatos.nome}
+                >
+                  <td className='py-2'>{candidatos.nome}</td>
+                  <td className='text-right text-sm sm:text-base'>
+                    {candidatos.cpf}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
         <div>
           <header>
             <img
@@ -20,6 +83,7 @@ const Avisos = () => {
               height={96}
               className='h-24'
             />
+            <p className='text-2xl text-red-700'>Encerrado</p>
             <h2 className='text-terciary text-xl font-bold my-4 place-self-start'>
               Estudiantes clasificados y desclasificados [Nombre- DNI]
             </h2>
@@ -92,6 +156,7 @@ const Avisos = () => {
               height={96}
               className='h-24'
             />
+            <p className='text-2xl text-red-700'>Encerrado</p>
             <h2 className='text-terciary text-xl font-bold my-4 place-self-start'>
               1ª chamada: Turma A (Quartas-feiras, das 19:00 às 21:00)
             </h2>
