@@ -1,30 +1,92 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-* {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  scroll-behavior: smooth;
+@theme {
+  --color-primary: #0056b3;
+  --color-secondary: #6fa4e9;
+  --color-terciary: #002b4f;
+  --color-light-gray: oklch(0.99 0.0146 98.28);
+  --color-midle-gray: #e6e6e6;
+  --color-dark-gray: oklch(0.5 0.01 270);
+  --color-coral: #ff6347;
+
+  --font-calibri: 'Calibri Light', sans-serif;
+  --font-trebuchet: Trebuchet MS, sans-serif;
+
+  --background-image-logo: url('./src/assets/logo.webp');
+
+  --animate-link-animate: link-animate 0.3s ease-in-out;
+
+  /* collapsible animates */
+  --animate-slideDownCollapsible: slideDownCollapsible 0.3s ease-in-out;
+  --animate-slideUpCollapsible: slideUpCollapsible 0.3s ease-in-out;
+
+  @keyframes link-animate {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @keyframes slideDownCollapsible {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-collapsible-content-height);
+    }
+  }
+  @keyframes slideUpCollapsible {
+    from {
+      height: var(--radix-collapsible-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
 }
 
-h1,
-h2,
-h3 {
-  font-family:
-    'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
-    Arial, sans-serif;
-  font-size: large;
-  font-weight: bold;
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
 }
 
-a {
-  font-family: 'Trebuchet MS', sans-serif;
-  font-size: large;
+@utility link-custom {
+  @apply text-secondary after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-secondary after:w-full;
 }
 
-@layer components {
-  .link-custom {
-    @apply p-4 relative transition-all after:absolute after:bottom-0 after:left-0 after:h-1 after:bg-secondary after:w-full after:transition-all;
+@layer utilities {
+  * {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+    /* border: 1px solid red; */
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  a {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: large;
   }
 }
 
