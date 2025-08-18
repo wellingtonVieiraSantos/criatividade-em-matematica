@@ -4,7 +4,7 @@ import Header from '../components/Header'
 
 function Root() {
   return (
-    <div className='text-terciary bg-light-gray min-h-dvh grid grid-rows-[auto_auto_auto] mb-13 lg:mb-0'>
+    <div className='min-h-dvh grid grid-rows-[auto_auto_auto] mb-13 lg:mb-0'>
       <Header />
       <main>
         <Outlet />

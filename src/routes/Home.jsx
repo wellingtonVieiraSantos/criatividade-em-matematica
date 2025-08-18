@@ -63,9 +63,7 @@ const Home = () => {
           className='hidden w-50 border border-midle-gray lg:flex bg-light-gray rounded-lg 
         overflow-hidden p-3 flex-col text-center items-center gap-4 absolute bottom-4 right-4'
         >
-          <h2 className='text-sm font-calibri font-light'>
-            Confira o livro no link abaixo
-          </h2>
+          <h2 className='text-sm'>Confira o livro no link abaixo</h2>
           <img
             src='/livro.jpeg'
             alt='qrcode instagram'
@@ -141,7 +139,7 @@ const Home = () => {
               Instituto Federal de Brasília.
             </p>
             <div className='w-full h-px bg-midle-gray' />
-            <div className='grid grid-cols-2 grid-rows-2 text-sm'>
+            <div className='grid grid-cols-2 grid-rows-2 text-base'>
               <p className='col-span-2'>Veja o currículo lattes completo em:</p>
               <a
                 href='http://lattes.cnpq.br/1556181022870398'
@@ -154,7 +152,7 @@ const Home = () => {
               </a>
             </div>
             <div className='w-full h-px bg-midle-gray' />
-            <div className='grid grid-cols-2 grid-rows-2 text-sm gap-2'>
+            <div className='grid grid-cols-2 grid-rows-2 text-base gap-2'>
               <p className='col-span-2'>E-mails</p>
               <p className='col-span-2 text-dark-gray'>
                 Clique no e-mail abaixo para copiá-lo para a área de
@@ -163,7 +161,7 @@ const Home = () => {
               <a
                 onClick={e => handleCopy(e)}
                 href='heniooliveira89@gmail.com'
-                className='relative col-span-2 lg:col-span-1 m-auto font-calibri py-1
+                className='relative col-span-2 lg:col-span-1 m-auto  py-1
                  after:bg-midle-gray after:bottom-0 after:absolute after:w-0 after:h-px hover:after:w-full
                     rounded-lg h-9 w-full max-w-sm flex items-center justify-center gap-4 transition after:duration-300'
               >
@@ -173,7 +171,7 @@ const Home = () => {
               <a
                 onClick={e => handleCopy(e)}
                 href='henio.oliveira@ifb.edu.br'
-                className='relative col-span-2 lg:col-span-1 m-auto  font-calibri py-1
+                className='relative col-span-2 lg:col-span-1 m-auto py-1
                 after:bg-midle-gray after:bottom-0 after:absolute after:w-0 after:h-px hover:after:w-full
                     rounded-lg h-9 w-full max-w-sm flex items-center justify-center gap-4 transition after:duration-300'
               >
@@ -184,7 +182,7 @@ const Home = () => {
           </div>
         </div>
         <div className='border size-full max-w-5xl p-3 flex flex-col items-center space-y-8 lg:space-y-0 lg:flex-row lg:justify-between bg-light-gray rounded-lg'>
-          <div className='h-full grid place-content-between text-sm text-center space-y-2 p-3'>
+          <div className='h-full grid place-content-between text-base text-center space-y-2 p-3'>
             <p>
               Escaneie o QR Code e se inscreva no instagram para ficar por
               dentro das novidades que virão
@@ -197,7 +195,7 @@ const Home = () => {
             <a
               href='https://www.instagram.com/criatividadeemmatematica/'
               target='_blank'
-              className='w-full m-auto max-w-sm py-1 font-calibri text-light-gray rounded-lg flex items-center justify-center gap-4
+              className='w-full m-auto max-w-sm py-1 text-light-gray rounded-lg flex items-center justify-center gap-4
             bg-gradient-to-br from-secondary to-violet-500 hover:shadow hover:shadow-primary duration-300 transition
             cursor-pointer'
             >

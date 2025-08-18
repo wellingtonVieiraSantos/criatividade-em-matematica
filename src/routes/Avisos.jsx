@@ -65,7 +65,7 @@ const Avisos = () => {
               <a
                 href='https://nead.ifb.edu.br/'
                 target='_blank'
-                className='text-coral font-bold hover:underline hover:underline-offset-4'
+                className='text-coral hover:underline hover:underline-offset-4'
               >
                 nead.ifb.edu.br
               </a>
@@ -73,7 +73,7 @@ const Avisos = () => {
               <a
                 href='mailto:henio.oliveira@ifb.edu.br'
                 target='_blank'
-                className='text-coral font-bold hover:underline hover:underline-offset-4'
+                className='text-coral hover:underline hover:underline-offset-4'
               >
                 henio.oliveira@ifb.edu.br
               </a>{' '}
@@ -237,7 +237,7 @@ const Avisos = () => {
               <a
                 href='https://nead.ifb.edu.br/'
                 target='_blank'
-                className='text-coral font-bold hover:underline hover:underline-offset-4'
+                className='text-coral hover:underline hover:underline-offset-4'
               >
                 nead.ifb.edu.br
               </a>
@@ -245,7 +245,7 @@ const Avisos = () => {
               <a
                 href='mailto:henio.oliveira@ifb.edu.br'
                 target='_blank'
-                className='text-coral font-bold hover:underline hover:underline-offset-4'
+                className='text-coral hover:underline hover:underline-offset-4'
               >
                 henio.oliveira@ifb.edu.br
               </a>{' '}

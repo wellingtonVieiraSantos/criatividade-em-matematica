@@ -21,7 +21,7 @@ const Edital = () => {
     <div className='min-h-[calc(100dvh-5rem)] grid place-content-center w-full xl:w-7xl m-auto text-justify leading-loose p-3'>
       <section className='border-b'>
         <Collapsible>
-          <CollapsibleTrigger className='p-1  xl:w-7xl cursor-pointer rounded hover:bg-midle-gray transition duration-300'>
+          <CollapsibleTrigger className='p-1 xl:w-7xl cursor-pointer rounded hover:bg-midle-gray transition duration-300'>
             <header className='flex flex-col pb-10 gap-1'>
               <div className='flex justify-between items-center'>
                 <img
@@ -91,7 +91,7 @@ const Edital = () => {
               <a
                 href='https://nead.ifb.edu.br/'
                 target='_blank'
-                className='text-coral font-bold hover:underline'
+                className='text-coral hover:underline'
               >
                 nead.ifb.edu.br
               </a>
@@ -135,7 +135,7 @@ const Edital = () => {
               <a
                 href='https://forms.gle/eDY6gqEszVgrkd218'
                 target='_blank'
-                className='text-coral font-bold hover:underline'
+                className='text-coral hover:underline'
               >
                 Inscrição
               </a>{' '}
@@ -183,7 +183,7 @@ const Edital = () => {
               <a
                 href='mailto:henio.oliveira@ifb.edu.br'
                 target='_blank'
-                className='text-coral font-bold hover:underline'
+                className='text-coral hover:underline'
               >
                 henio.oliveira@ifb.edu.br
               </a>
@@ -323,7 +323,7 @@ const Edital = () => {
               <a
                 href='#'
                 target='_blank'
-                className='text-coral font-bold hover:underline'
+                className='text-coral hover:underline'
               >
                 Inscripción (encerrado)
               </a>
@@ -335,7 +335,7 @@ const Edital = () => {
               registrado por el propio sistema. Si los cupos se completan antes
               de la fecha límite, el formulario será cerrado.
             </p>
-            <h2 className='text-xl font-bold my-4'>Contenido Programático:</h2>
+            <h2 className='my-4'>Contenido Programático:</h2>
             <p>Reflexiones Teórico-Prácticas en torno a:</p>
             <ol className='list-decimal list-inside space-y-4'>
               <li>
@@ -424,7 +424,7 @@ const Edital = () => {
                 <a
                   href='https://nead.ifb.edu.br/'
                   target='_blank'
-                  className='text-coral font-bold hover:underline'
+                  className='text-coral hover:underline'
                 >
                   nead.ifb.edu.br
                 </a>
@@ -595,7 +595,7 @@ const Edital = () => {
                   <a
                     href='#'
                     target='_blank'
-                    className='text-coral font-bold hover:underline'
+                    className='text-coral hover:underline'
                   >
                     Inscreva-se! (encerrado)
                   </a>{' '}
@@ -624,7 +624,7 @@ const Edital = () => {
                 </p>
               </li>
             </ol>
-            <h2 className='text-xl font-bold my-4'>Preenchimento das vagas</h2>
+            <h2 className='my-4'>Preenchimento das vagas</h2>
             <p>
               As vagas descritas no item 5 serão preenchidas obedecendo à ordem
               cronológica de inscrição dos candidatos e ao estado preenchido no
@@ -642,14 +642,11 @@ const Edital = () => {
               e, também, registra a data, o horário da conclusão da inscrição e
               a ordem geral da solicitação de inscrição.
             </p>
-            <h2 className='text-xl font-bold my-4'>Efetivação da inscrição</h2>
+            <h2 className='my-4'>Efetivação da inscrição</h2>
             <p>
               Até às 23h59min (horário de Brasília) de 05 de setembro de 2024
               (segunda-feira), será disponibilizada, na aba{' '}
-              <Link
-                to='/avisos'
-                className='text-coral font-bold hover:underline'
-              >
+              <Link to='/avisos' className='text-coral hover:underline'>
                 avisos
               </Link>
               , uma lista dos candidatos inscritos na Formação em Criatividade
@@ -666,7 +663,7 @@ const Edital = () => {
               <a
                 href='mailto:henio.oliveira@ifb.edu.br'
                 target='_blank'
-                className='text-coral font-bold hover:underline'
+                className='text-coral hover:underline'
               >
                 henio.oliveira@ifb.edu.br
               </a>{' '}
@@ -678,10 +675,7 @@ const Edital = () => {
             </p>
             <p>
               A lista de 2ª chamada será divulgada na aba{' '}
-              <Link
-                to='/avisos'
-                className='text-coral font-bold hover:underline'
-              >
+              <Link to='/avisos' className='text-coral hover:underline'>
                 avisos
               </Link>{' '}
               até 14h (horário de Brasília) de 12 de setembro de 2024. Os
@@ -690,10 +684,10 @@ const Edital = () => {
               até às 23h59min (horário de Brasília) de 15 de setembro de 2024
               (domingo).
             </p>
-            <h2 className='text-xl font-bold my-4'>Conteúdo Programático</h2>
+            <h2 className='my-4'>Conteúdo Programático</h2>
             <ul className='text-left'>
               <li>
-                <h3 className='font-bold'>
+                <h3>
                   Reflexões Teórico-Práticas 1 – A criatividade em um primeiro
                   olhar
                 </h3>
@@ -709,7 +703,7 @@ const Edital = () => {
                 </ul>
               </li>
               <li>
-                <h3 className='font-bold mt-4'>
+                <h3>
                   Reflexões teórico-práticas 2 – A criatividade através dos
                   problemas abertos
                 </h3>
@@ -720,7 +714,7 @@ const Edital = () => {
                 </ul>
               </li>
               <li>
-                <h3 className='font-bold mt-4'>
+                <h3>
                   Reflexões teórico-práticas 3 – A Criatividade em Matemática
                 </h3>
                 <ul className='list-inside list-disc'>
@@ -731,9 +725,7 @@ const Edital = () => {
                 </ul>
               </li>
               <li>
-                <h3 className='font-bold mt-4'>
-                  Reflexões teórico-práticas 4 – A Criatividade Docente
-                </h3>
+                <h3>Reflexões teórico-práticas 4 – A Criatividade Docente</h3>
                 <ul className='list-inside list-disc'>
                   <li>
                     O ensinar criativamente e o ensinar para a criatividade.
@@ -743,9 +735,7 @@ const Edital = () => {
                 </ul>
               </li>
               <li>
-                <h3 className='font-bold mt-4'>
-                  Reflexões teórico-práticas autonomas
-                </h3>
+                <h3>Reflexões teórico-práticas autonomas</h3>
                 <ul className='list-inside list-disc'>
                   <li>Práticas em criatividade em matemática.</li>
                 </ul>
