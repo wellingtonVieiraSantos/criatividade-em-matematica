@@ -10,7 +10,7 @@
   --color-coral: #ff6347;
 
   --font-calibri: 'Calibri Light', sans-serif;
-  --font-trebuchet: Trebuchet MS, sans-serif;
+  --font-trebuchet: 'Trebuchet MS', sans-serif;
 
   --background-image-logo: url('./src/assets/logo.webp');
 
@@ -46,33 +46,20 @@
   }
 }
 
-/*
-  The default border color has changed to `currentcolor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
 @layer base {
   *,
   ::after,
   ::before,
   ::backdrop,
   ::file-selector-button {
-    border-color: var(--color-gray-200, currentcolor);
-  }
-}
-
-@utility link-custom {
-  @apply text-secondary after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-secondary after:w-full;
-}
-
-@layer utilities {
-  * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-color: var(--color-midle-gray, currentcolor);
     scroll-behavior: smooth;
-    /* border: 1px solid red; */
+  }
+  body {
+    background: var(--color-light-gray);
+    color: var(--color-terciary);
+    font-family: var(--font-calibri);
+    font-size: larger;
   }
 
   h1,
@@ -88,6 +75,10 @@
     font-family: 'Trebuchet MS', sans-serif;
     font-size: large;
   }
+}
+
+@utility link-custom {
+  @apply text-secondary after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-secondary after:w-full;
 }
 
 @font-face {

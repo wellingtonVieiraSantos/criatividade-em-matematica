@@ -101,6 +101,28 @@ const Home = () => {
           ))}
         </Marquee>
       </section>
+      <section className='flex flex-col justify-center w-full max-w-5xl m-auto p-3 py-10'>
+        <p className='font-trebuchet text-center text-primary'>Artigos</p>
+        <p>Ler mais em:</p>
+        <div className='flex flex-col xl:flex-row text-center gap-2'>
+          <a
+            href='https://www.periodicos.unimontes.br/index.php/emd/article/view/8347'
+            target='_blank'
+            className='xl:flex-1 border rounded-lg p-2 hover:bg-midle-gray hover:text-primary duration-300'
+          >
+            From macro to micro: how do Brazilian educational normative
+            documents guide creativity?
+          </a>
+          <a
+            href='https://recriai.emnuvens.com.br/revista/article/view/113'
+            target='_blank'
+            className='xl:flex-1 border rounded-lg p-2 hover:bg-midle-gray hover:text-primary duration-300'
+          >
+            As atitudes dos professores de matemática em relação à Criatividade:
+            uma análise exploratória
+          </a>
+        </div>
+      </section>
       <section className=' w-full grid place-items-center gap-4 p-3 pt-40 lg:pt-20 bg-gradient-to-b from-secondary via-primary to-terciary'>
         <div className='relative border size-full max-w-5xl p-3 flex flex-col lg:flex-row bg-light-gray rounded-lg'>
           <div

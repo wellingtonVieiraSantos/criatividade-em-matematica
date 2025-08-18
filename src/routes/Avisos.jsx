@@ -42,21 +42,21 @@ const Avisos = () => {
     <div className='min-h-[calc(100dvh-5rem)] grid place-content-center w-full xl:w-7xl m-auto text-justify leading-loose p-3'>
       <section className='border-b'>
         <Collapsible>
-          <CollapsibleTrigger className='p-1 xl:w-7xl cursor-pointer rounded hover:bg-midle-gray transition duration-300'>
+          <CollapsibleTrigger className='p-1  xl:w-7xl cursor-pointer rounded hover:bg-midle-gray transition duration-300'>
             <header className='flex flex-col pb-10 gap-1'>
               <div className='flex justify-between items-center'>
                 <img
                   src={brasil}
-                  alt='bandera de argentina'
+                  alt='bandera do brasil'
                   width={60}
                   height={40}
                 />
                 <p className='text-red-700'>Encerrado</p>
               </div>
-              <h2 className='text-primary text-lg xl:text-2xl'>
+              <h1 className='text-primary text-lg xl:text-2xl'>
                 1ª chamada: Turma A (3ª Edição - Segundas e Quartas-feiras,
                 14h-16h)
-              </h2>
+              </h1>
             </header>
           </CollapsibleTrigger>
           <CollapsibleContent>
