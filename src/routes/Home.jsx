@@ -9,6 +9,7 @@ import ppgecem from '../assets/img/ppgecem.webp'
 import gepeem from '../assets/img/gepeem.webp'
 import lattes from '../assets/img/lattes.svg'
 import { toast, Toaster } from 'sonner'
+import { externalLinks } from '../util/externalLinks'
 
 const marqueeItens = [
   { src: unioeste, alt: 'logo unioeste' },
@@ -46,7 +47,7 @@ const Home = () => {
           bg-no-repeat bg-center bg-cover min-h-[calc(100dvh-4rem)] grid place-content-center lg:grid-cols-[1fr_1fr] p-3`}
       >
         <div className='p-4 tracking-wide grid place-items-center place-content-center gap-20 text-light-gray'>
-          <h1 className='text-center text-3xl lg:text-5xl text-balance tracking-widest'>
+          <h1 className='text-center text-3xl lg:text-5xl text-balance tracking-widest leading-10 lg:leading-16'>
             Formação em Criatividade em Matemática através de Problemas Abertos
           </h1>
           <a
@@ -81,7 +82,7 @@ const Home = () => {
           </a>
         </div>
       </section>
-      <section className='w-full m-auto flex flex-col gap-4 p-3'>
+      <section className='w-full m-auto flex flex-col gap-7 p-3 py-8'>
         <h2 className='text-xl text-center lg:text-3xl'>Realização</h2>
         <Marquee
           gradient
@@ -99,26 +100,22 @@ const Home = () => {
           ))}
         </Marquee>
       </section>
-      <section className='flex flex-col justify-center w-full max-w-5xl m-auto p-3 py-10'>
-        <p className='font-trebuchet text-center text-primary'>Artigos</p>
-        <p>Ler mais em:</p>
-        <div className='flex flex-col xl:flex-row text-center gap-2'>
-          <a
-            href='https://www.periodicos.unimontes.br/index.php/emd/article/view/8347'
-            target='_blank'
-            className='xl:flex-1 border rounded-lg p-2 hover:bg-midle-gray hover:text-primary duration-300'
-          >
-            From macro to micro: how do Brazilian educational normative
-            documents guide creativity?
-          </a>
-          <a
-            href='https://recriai.emnuvens.com.br/revista/article/view/113'
-            target='_blank'
-            className='xl:flex-1 border rounded-lg p-2 hover:bg-midle-gray hover:text-primary duration-300'
-          >
-            As atitudes dos professores de matemática em relação à Criatividade:
-            uma análise exploratória
-          </a>
+      <section className='flex flex-col justify-center gap-4 w-full max-w-5xl m-auto p-3 py-10'>
+        <h3 className='font-trebuchet text-center text-primary text-2xl'>
+          Artigos
+        </h3>
+        <p>Leia mais pelos links abaixo:</p>
+        <div className='grid grid-cols-1 xl:grid-cols-2 gap-3 text-center'>
+          {externalLinks.map(link => (
+            <a
+              key={link.href}
+              href={link.href}
+              target='_blank'
+              className='border rounded-lg p-2 hover:bg-midle-gray hover:text-primary duration-300 line-clamp-1 leading-9 xl:leading-12'
+            >
+              {link.text}
+            </a>
+          ))}
         </div>
       </section>
       <section className=' w-full grid place-items-center gap-4 p-3 pt-40 lg:pt-20 bg-gradient-to-b from-secondary via-primary to-terciary'>
@@ -131,7 +128,7 @@ const Home = () => {
           <div className='grid justify-between p-3 pt-25 lg:pt-0 lg:flex-2 text-justify space-y-2'>
             <h2 className='text-xl'>Sobre o autor</h2>
             <p>
-              Doutorando em Educação em Ciências e Educação Matemática pela
+              Doutor em Educação em Ciências e Educação Matemática pela
               Universidade Estadual do Oeste do Paraná, Mestre em Educação pela
               Escola Superior de Educação de Santarém (Portugal) e especialista
               em Ensino de Matemática para o Ensino Médio pelo IFRN – Campus
@@ -151,9 +148,8 @@ const Home = () => {
                 Lattes
               </a>
             </div>
-            <div className='w-full h-px bg-midle-gray' />
-            <div className='grid grid-cols-2 grid-rows-2 text-base gap-2'>
-              <p className='col-span-2'>E-mails</p>
+            <div className='grid grid-cols-2 grid-rows-2 text-base gap-1'>
+              <p className='col-span-2 text-lg font-trebuchet'>E-mails</p>
               <p className='col-span-2 text-dark-gray'>
                 Clique no e-mail abaixo para copiá-lo para a área de
                 transferência

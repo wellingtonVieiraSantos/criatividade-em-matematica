@@ -12,14 +12,10 @@ const Header = () => {
   return (
     <>
       {/* nav for mobile */}
-      <nav className=' h-20 w-full flex lg:hidden justify-between select-none border border-midle-gray fixed bottom-0 bg-light-gray z-10 '>
+      <nav className=' h-20 w-full flex lg:hidden justify-between select-none border-t fixed bottom-0 bg-light-gray z-10 '>
         <ul className='w-full flex p-1 items-center'>
           {navLinks.map((nav, i) => (
-            <li
-              key={i}
-              className=' hover:text-secondary font-calibri flex-1 '
-              translate='no'
-            >
+            <li key={i} className=' hover:text-secondar flex-1 ' translate='no'>
               <NavLink
                 to={nav.url}
                 className={({ isActive }) =>
